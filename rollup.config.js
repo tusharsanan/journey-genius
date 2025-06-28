@@ -5,8 +5,10 @@ import resolve from "@rollup/plugin-node-resolve";
 import replace from "@rollup/plugin-replace";
 
 export default {
-  input: "./index.html",
+  input: "./src/journey-genius.app.ts",
   output: {
+    dir: "dist",
+    format: "es",
     sourcemap: false,
   },
   onwarn(warning) {
@@ -22,11 +24,7 @@ export default {
       noEmitOnError: true,
     }),
     replace({ preventAssignment: false, "Reflect.decorate": "undefined" }),
-    resolve({
-      customResolveOptions: {
-        moduleDirectory: "src",
-      },
-    }),
+    resolve(),
     /**
      * This minification setup serves the static site generation.
      * For bundling and minification, check the README.md file.
