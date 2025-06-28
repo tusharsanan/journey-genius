@@ -1,0 +1,70 @@
+[
+  {
+    "id": 125,
+    "title": "Cafe Bliss",
+    "description": "Luxury stay with all modern amenities.",
+    "image": "https://images.unsplash.com/photo-1505250469679-203ad9ced0cb?auto=format&fit=crop&w=800&q=80",
+    "location": {
+      "address": "789 Bliss Rd, Relax Town, RT 78901",
+      "city": "Relax Town",
+      "country": "Sample Country"
+    },
+    "averageRating": 4.8,
+    "numberOfReviews": 163,
+    "categories": ["luxury", "spa", "terrace"],
+    "type": "hotel",
+    "reviews": [
+      {
+        "rating": 5,
+        "comment": "Amazing food and great service!"
+      }
+    ],
+    "contactInfo": {
+      "phone": "+1234567892",
+      "email": "info@hotelbliss.com",
+      "features": "Pool, Spa, Free Breakfast"
+    }
+  },
+  {
+    "id": 126,
+    "title": "Cafe Corner",
+    "description": "Cozy cafe with the best coffee in town.",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+    "location": {
+      "address": "321 Coffee Ln, Brew City, BC 32100",
+      "city": "Brew City",
+      "country": "Sample Country"
+    },
+    "averageRating": 4.6,
+    "numberOfReviews": 187,
+    "categories": ["coffee", "pet-friendly", "outdoor"],
+    "type": "miscellaneous",
+    "reviews": [],
+    "contactInfo": {
+      "phone": "+1234567893",
+      "email": "hello@cafecorner.com",
+      "features": "Wifi, Outdoor Seating, Pet Friendly"
+    }
+  },
+  {
+    "id": 134,
+    "title": "Green Leaf Cafe",
+    "description": "Vegan and vegetarian delights. Enjoy a wide variety of healthy, plant-based dishes in a cozy atmosphere.",
+    "image": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80",
+    "location": {
+      "address": "700 Plant Ave, Veg City, VC 70007",
+      "city": "Veg City",
+      "country": "Sample Country"
+    },
+    "averageRating": 4.8,
+    "numberOfReviews": 167,
+    "categories": ["vegan", "vegetarian", "cafe"],
+    "type": "restaurant",
+    "reviews": [],
+    "contactInfo": {
+      "phone": "+1234567801",
+      "email": "hello@greenleafcafe.com",
+      "features": "Vegan Options, Gluten Free, Outdoor Seating"
+    }
+  }
+]

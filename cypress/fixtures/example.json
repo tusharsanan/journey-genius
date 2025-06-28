@@ -1,0 +1,860 @@
+{
+  "journeyData": [
+    {
+      "id": 123,
+      "title": "Sample Data",
+      "description": "This is a sample JSON data file for testing purposes.",
+      "image": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80",
+      "location": {
+        "address": "123 Sample St, Sample City, SC 12345",
+        "city": "Sample City",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.5,
+      "numberOfReviews": 150,
+      "categories": ["italian", "outdoor", "terrace"],
+      "type": "restaurant",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Amazing food and great service!"
+        }
+      ],
+      "contactInfo": {
+        "phone": "+1234567890",
+        "email": "a@b.com",
+        "features": "Wifi, Outdoor Seating, Reservations"
+      }
+    },
+    {
+      "id": 124,
+      "title": "Pizza Palace",
+      "description": "Authentic Italian pizza in the heart of the city.",
+      "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80",
+      "location": {
+        "address": "456 Pizza Ave, Food City, FC 45678",
+        "city": "Food City",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.7,
+      "numberOfReviews": 200,
+      "categories": ["pizza", "family", "outdoor"],
+      "type": "restaurant",
+      "reviews": [],
+      "contactInfo": {
+        "phone": "+1234567891",
+        "email": "pizza@palace.com",
+        "features": "Delivery, Takeout, Family Friendly"
+      }
+    },
+    {
+      "id": 125,
+      "title": "Cafe Bliss",
+      "description": "Luxury stay with all modern amenities.",
+      "image": "https://images.unsplash.com/photo-1505250469679-203ad9ced0cb?auto=format&fit=crop&w=800&q=80",
+      "location": {
+        "address": "789 Bliss Rd, Relax Town, RT 78901",
+        "city": "Relax Town",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.8,
+      "numberOfReviews": 163,
+      "categories": ["luxury", "spa", "terrace"],
+      "type": "hotel",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Amazing food and great service!"
+        }
+      ],
+      "contactInfo": {
+        "phone": "+1234567892",
+        "email": "info@hotelbliss.com",
+        "features": "Pool, Spa, Free Breakfast"
+      }
+    },
+    {
+      "id": 126,
+      "title": "Cafe Corner",
+      "description": "Cozy cafe with the best coffee in town.",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+      "location": {
+        "address": "321 Coffee Ln, Brew City, BC 32100",
+        "city": "Brew City",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.6,
+      "numberOfReviews": 187,
+      "categories": ["coffee", "pet-friendly", "outdoor"],
+      "type": "miscellaneous",
+      "reviews": [],
+      "contactInfo": {
+        "phone": "+1234567893",
+        "email": "hello@cafecorner.com",
+        "features": "Wifi, Outdoor Seating, Pet Friendly"
+      }
+    },
+    {
+      "id": 127,
+      "title": "Sushi World",
+      "description": "Fresh sushi and sashimi prepared by expert chefs.",
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=800&q=80",
+      "location": {
+        "address": "654 Sushi St, Fish Town, FT 65432",
+        "city": "Fish Town",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.9,
+      "numberOfReviews": 210,
+      "categories": ["sushi", "vegan", "terrace"],
+      "type": "restaurant",
+      "reviews": [],
+      "contactInfo": {
+        "phone": "+1234567894",
+        "email": "contact@sushiworld.com",
+        "features": "Reservations, Takeout, Vegan Options"
+      }
+    },
+    {
+      "id": 128,
+      "title": "Mountain Retreat",
+      "description": "A peaceful retreat in the mountains.",
+      "image": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=800&q=80",
+      "location": {
+        "address": "100 Mountain Rd, Hilltown, HT 10001",
+        "city": "Hilltown",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.8,
+      "numberOfReviews": 120,
+      "categories": ["mountain", "nature", "spa"],
+      "type": "hotel",
+      "reviews": [],
+      "contactInfo": {
+        "phone": "+1234567895",
+        "email": "info@mountainretreat.com",
+        "features": "Spa, Hiking, Free Breakfast"
+      }
+    },
+    {
+      "id": 129,
+      "title": "Burger Barn",
+      "description": "Juicy burgers and crispy fries.",
+      "image": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80",
+      "location": {
+        "address": "200 Burger Blvd, Grill City, GC 20002",
+        "city": "Grill City",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.3,
+      "numberOfReviews": 98,
+      "categories": ["burger", "fast-food", "family"],
+      "type": "restaurant",
+      "reviews": [],
+      "contactInfo": {
+        "phone": "+1234567896",
+        "email": "contact@burgerbarn.com",
+        "features": "Takeout, Delivery, Kids Menu"
+      }
+    },
+    {
+      "id": 130,
+      "title": "Artisan Bakery",
+      "description": "Freshly baked bread and pastries every morning.",
+      "image": "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80",
+      "location": {
+        "address": "300 Bread St, Dough City, DC 30003",
+        "city": "Dough City",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.7,
+      "numberOfReviews": 110,
+      "categories": ["bakery", "breakfast", "coffee"],
+      "type": "miscellaneous",
+      "reviews": [],
+      "contactInfo": {
+        "phone": "+1234567897",
+        "email": "hello@artisanbakery.com",
+        "features": "Coffee, Pastries, Outdoor Seating"
+      }
+    },
+    {
+      "id": 131,
+      "title": "Seaside Resort",
+      "description": "Relax by the sea with luxury amenities.",
+      "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+      "location": {
+        "address": "400 Ocean Dr, Beach City, BC 40004",
+        "city": "Beach City",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.9,
+      "numberOfReviews": 250,
+      "categories": ["beach", "luxury", "spa"],
+      "type": "hotel",
+      "reviews": [],
+      "contactInfo": {
+        "phone": "+1234567898",
+        "email": "stay@seasideresort.com",
+        "features": "Pool, Spa, Ocean View"
+      }
+    },
+    {
+      "id": 132,
+      "title": "Taco Town",
+      "description": "Authentic Mexican tacos and more.",
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80",
+      "location": {
+        "address": "500 Fiesta Ln, Salsa City, SC 50005",
+        "city": "Salsa City",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.6,
+      "numberOfReviews": 140,
+      "categories": ["mexican", "tacos", "casual"],
+      "type": "restaurant",
+      "reviews": [],
+      "contactInfo": {
+        "phone": "+1234567899",
+        "email": "info@tacotown.com",
+        "features": "Takeout, Vegan Options, Outdoor Seating"
+      }
+    },
+    {
+      "id": 133,
+      "title": "Urban Hostel",
+      "description": "Affordable stay for urban explorers.",
+      "image": "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80",
+      "location": {
+        "address": "600 City Rd, Metro City, MC 60006",
+        "city": "Metro City",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.2,
+      "numberOfReviews": 80,
+      "categories": ["hostel", "budget", "city"],
+      "type": "hotel",
+      "reviews": [],
+      "contactInfo": {
+        "phone": "+1234567800",
+        "email": "book@urbanhostel.com",
+        "features": "Wifi, Shared Kitchen, Central Location"
+      }
+    },
+    {
+      "id": 134,
+      "title": "Green Leaf Cafe",
+      "description": "Vegan and vegetarian delights. Enjoy a wide variety of healthy, plant-based dishes in a cozy atmosphere.",
+      "image": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80",
+      "location": {
+        "address": "700 Plant Ave, Veg City, VC 70007",
+        "city": "Veg City",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.8,
+      "numberOfReviews": 167,
+      "categories": ["vegan", "vegetarian", "cafe"],
+      "type": "restaurant",
+      "reviews": [],
+      "contactInfo": {
+        "phone": "+1234567801",
+        "email": "hello@greenleafcafe.com",
+        "features": "Vegan Options, Gluten Free, Outdoor Seating"
+      }
+    },
+    {
+      "id": 135,
+      "title": "City Library",
+      "description": "A quiet place to read and study.",
+      "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80",
+      "location": {
+        "address": "800 Book St, Read City, RC 80008",
+        "city": "Read City",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.9,
+      "numberOfReviews": 300,
+      "categories": ["library", "study", "quiet"],
+      "type": "miscellaneous",
+      "reviews": [],
+      "contactInfo": {
+        "phone": "+1234567802",
+        "email": "info@citylibrary.com",
+        "features": "Wifi, Study Rooms, Events"
+      }
+    },
+    {
+      "id": 136,
+      "title": "Sunset Diner",
+      "description": "Classic diner with a sunset view.",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+      "location": {
+        "address": "900 Sunset Blvd, View City, VC 90009",
+        "city": "View City",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.4,
+      "numberOfReviews": 130,
+      "categories": ["diner", "classic", "view"],
+      "type": "restaurant",
+      "reviews": [],
+      "contactInfo": {
+        "phone": "+1234567803",
+        "email": "contact@sunsetdiner.com",
+        "features": "Breakfast, Dinner, Scenic View"
+      }
+    },
+    {
+      "id": 137,
+      "title": "Blue Lagoon Spa",
+      "description": "Relax and rejuvenate at the spa.",
+      "image": "https://images.unsplash.com/photo-1505250469679-203ad9ced0cb?auto=format&fit=crop&w=800&q=80",
+      "location": {
+        "address": "1000 Lagoon Rd, Spa City, SC 10010",
+        "city": "Spa City",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.9,
+      "numberOfReviews": 220,
+      "categories": ["spa", "wellness", "luxury"],
+      "type": "miscellaneous",
+      "reviews": [],
+      "contactInfo": {
+        "phone": "+1234567804",
+        "email": "relax@bluelagoonspa.com",
+        "features": "Massage, Sauna, Pool"
+      }
+    },
+    {
+      "id": 138,
+      "title": "Jazz Club",
+      "description": "Live jazz music every night.",
+      "image": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=800&q=80",
+      "location": {
+        "address": "1100 Music Ave, Tune City, TC 11011",
+        "city": "Tune City",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.7,
+      "numberOfReviews": 175,
+      "categories": ["music", "jazz", "nightlife"],
+      "type": "miscellaneous",
+      "reviews": [],
+      "contactInfo": {
+        "phone": "+1234567805",
+        "email": "info@jazzclub.com",
+        "features": "Live Music, Bar, Dance Floor"
+      }
+    },
+    {
+      "id": 139,
+      "title": "Adventure Park",
+      "description": "Fun for the whole family.",
+      "image": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80",
+      "location": {
+        "address": "1200 Adventure Rd, Fun City, FC 12012",
+        "city": "Fun City",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.5,
+      "numberOfReviews": 210,
+      "categories": ["park", "adventure", "family"],
+      "type": "miscellaneous",
+      "reviews": [],
+      "contactInfo": {
+        "phone": "+1234567806",
+        "email": "info@adventurepark.com",
+        "features": "Rides, Food Court, Parking"
+      }
+    },
+    {
+      "id": 140,
+      "title": "The Book Nook",
+      "description": "Cozy bookstore with a cafe.",
+      "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80",
+      "location": {
+        "address": "1300 Story Ln, Tale City, TC 13013",
+        "city": "Tale City",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.8,
+      "numberOfReviews": 90,
+      "categories": ["bookstore", "cafe", "quiet"],
+      "type": "miscellaneous",
+      "reviews": [],
+      "contactInfo": {
+        "phone": "+1234567807",
+        "email": "hello@booknook.com",
+        "features": "Coffee, Reading Area, Events"
+      }
+    },
+    {
+      "id": 141,
+      "title": "Pasta Point",
+      "description": "Delicious pasta dishes from Italy.",
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80",
+      "location": {
+        "address": "1400 Pasta Rd, Noodle City, NC 14014",
+        "city": "Noodle City",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.6,
+      "numberOfReviews": 160,
+      "categories": ["italian", "pasta", "family"],
+      "type": "restaurant",
+      "reviews": [],
+      "contactInfo": {
+        "phone": "+1234567808",
+        "email": "info@pastapoint.com",
+        "features": "Takeout, Delivery, Family Friendly"
+      }
+    },
+    {
+      "id": 142,
+      "title": "Skyline Rooftop",
+      "description": "Drinks and dining with a city view.",
+      "image": "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80",
+      "location": {
+        "address": "1500 Sky Ave, High City, HC 15015",
+        "city": "High City",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.7,
+      "numberOfReviews": 145,
+      "categories": ["rooftop", "bar", "view"],
+      "type": "miscellaneous",
+      "reviews": [],
+      "contactInfo": {
+        "phone": "+1234567809",
+        "email": "info@skylinerooftop.com",
+        "features": "Cocktails, Tapas, City View"
+      }
+    },
+    {
+      "id": 143,
+      "title": "Hotel Grill",
+      "description": "Farm-to-table dining experience.",
+      "image": "https://images.unsplash.com/photo-1505250469679-203ad9ced0cb?auto=format&fit=crop&w=800&q=80",
+      "location": {
+        "address": "1600 Farm Rd, Green City, GC 16016",
+        "city": "Green City",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.8,
+      "numberOfReviews": 130,
+      "categories": ["grill", "organic", "family"],
+      "type": "restaurant",
+      "reviews": [],
+      "contactInfo": {
+        "phone": "+1234567810",
+        "email": "info@farmhousegrill.com",
+        "features": "Organic, Outdoor Seating, Kids Menu"
+      }
+    },
+    {
+      "id": 144,
+      "title": "Tech Hub",
+      "description": "Coworking space for tech enthusiasts.",
+      "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80",
+      "location": {
+        "address": "1700 Code St, Silicon City, SC 17017",
+        "city": "Silicon City",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.9,
+      "numberOfReviews": 85,
+      "categories": ["coworking", "tech", "wifi"],
+      "type": "miscellaneous",
+      "reviews": [],
+      "contactInfo": {
+        "phone": "+1234567811",
+        "email": "info@techhub.com",
+        "features": "Wifi, Meeting Rooms, Coffee"
+      }
+    },
+    {
+      "id": 145,
+      "title": "Yoga Studio",
+      "description": "Find your balance and peace.",
+      "image": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=800&q=80",
+      "location": {
+        "address": "1800 Zen Ln, Calm City, CC 18018",
+        "city": "Calm City",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.7,
+      "numberOfReviews": 100,
+      "categories": ["yoga", "wellness", "fitness"],
+      "type": "miscellaneous",
+      "reviews": [],
+      "contactInfo": {
+        "phone": "+1234567812",
+        "email": "info@yogastudio.com",
+        "features": "Classes, Meditation, Workshops"
+      }
+    },
+    {
+      "id": 146,
+      "title": "Ice Cream Parlor",
+      "description": "Homemade ice cream in many flavors.",
+      "image": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80",
+      "location": {
+        "address": "1900 Sweet St, Dessert City, DC 19019",
+        "city": "Dessert City",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.6,
+      "numberOfReviews": 115,
+      "categories": ["dessert", "ice-cream", "family"],
+      "type": "miscellaneous",
+      "reviews": [],
+      "contactInfo": {
+        "phone": "+1234567813",
+        "email": "info@icecreamparlor.com",
+        "features": "Homemade, Outdoor Seating, Kids Menu"
+      }
+    },
+    {
+      "id": 147,
+      "title": "The Fish Market",
+      "description": "Fresh seafood daily.",
+      "image": "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80",
+      "location": {
+        "address": "2000 Ocean Ave, Harbor City, HC 20020",
+        "city": "Harbor City",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.8,
+      "numberOfReviews": 140,
+      "categories": ["seafood", "market", "fresh"],
+      "type": "restaurant",
+      "reviews": [],
+      "contactInfo": {
+        "phone": "+1234567814",
+        "email": "info@fishmarket.com",
+        "features": "Fresh Seafood, Takeout, Outdoor Seating"
+      }
+    },
+    {
+      "id": 148,
+      "title": "Cinema Central",
+      "description": "Watch the latest movies in comfort.",
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80",
+      "location": {
+        "address": "2100 Film St, Movie City, MC 21021",
+        "city": "Movie City",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.5,
+      "numberOfReviews": 190,
+      "categories": ["cinema", "entertainment", "family"],
+      "type": "miscellaneous",
+      "reviews": [],
+      "contactInfo": {
+        "phone": "+1234567815",
+        "email": "info@cinemacentral.com",
+        "features": "Snacks, Recliners, 3D Movies"
+      }
+    },
+    {
+      "id": 149,
+      "title": "The Flower Shop",
+      "description": "Beautiful bouquets for every occasion.",
+      "image": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=800&q=80",
+      "location": {
+        "address": "2200 Blossom Rd, Bloom City, BC 22022",
+        "city": "Bloom City",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.9,
+      "numberOfReviews": 75,
+      "categories": ["flowers", "shop", "gifts"],
+      "type": "miscellaneous",
+      "reviews": [],
+      "contactInfo": {
+        "phone": "+1234567816",
+        "email": "info@flowershop.com",
+        "features": "Bouquets, Delivery, Gifts"
+      }
+    },
+    {
+      "id": 150,
+      "title": "Steakhouse Prime",
+      "description": "Premium steaks and fine wine.",
+      "image": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80",
+      "location": {
+        "address": "2300 Grill Ave, Steak City, SC 23023",
+        "city": "Steak City",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.8,
+      "numberOfReviews": 170,
+      "categories": ["steak", "fine-dining", "wine"],
+      "type": "restaurant",
+      "reviews": [],
+      "contactInfo": {
+        "phone": "+1234567817",
+        "email": "info@steakhouseprime.com",
+        "features": "Wine List, Private Dining, Reservations"
+      }
+    },
+    {
+      "id": 151,
+      "title": "The Bike Stop",
+      "description": "Rent bikes and explore the city.",
+      "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80",
+      "location": {
+        "address": "2400 Cycle Rd, Pedal City, PC 24024",
+        "city": "Pedal City",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.7,
+      "numberOfReviews": 105,
+      "categories": ["bike", "rental", "outdoor"],
+      "type": "miscellaneous",
+      "reviews": [],
+      "contactInfo": {
+        "phone": "+1234567818",
+        "email": "info@bikestop.com",
+        "features": "Bike Rental, Tours, Accessories"
+      }
+    },
+    {
+      "id": 152,
+      "title": "The Tea House",
+      "description": "Exquisite teas from around the world.",
+      "image": "https://unsplash.com/photos/tea-house",
+      "location": {
+        "address": "2500 Leaf Ln, Brew City, BC 25025",
+        "city": "Brew City",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.9,
+      "numberOfReviews": 95,
+      "categories": ["tea", "cafe", "relax"],
+      "type": "miscellaneous",
+      "reviews": [],
+      "contactInfo": {
+        "phone": "+1234567819",
+        "email": "info@teahouse.com",
+        "features": "Tea Tasting, Pastries, Outdoor Seating"
+      }
+    },
+    {
+      "id": 153,
+      "title": "City Zoo",
+      "description": "See animals from all over the world.",
+      "image": "https://unsplash.com/photos/city-zoo",
+      "location": {
+        "address": "2600 Safari Rd, Wild City, WC 26026",
+        "city": "Wild City",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.6,
+      "numberOfReviews": 300,
+      "categories": ["zoo", "family", "animals"],
+      "type": "miscellaneous",
+      "reviews": [],
+      "contactInfo": {
+        "phone": "+1234567820",
+        "email": "info@cityzoo.com",
+        "features": "Guided Tours, Kids Area, Cafeteria"
+      }
+    },
+    {
+      "id": 154,
+      "title": "The Sushi Bar",
+      "description": "Fresh sushi and sashimi daily.",
+      "image": "https://unsplash.com/photos/sushi-bar",
+      "location": {
+        "address": "2700 Fish Ln, Ocean City, OC 27027",
+        "city": "Ocean City",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.8,
+      "numberOfReviews": 180,
+      "categories": ["sushi", "japanese", "bar"],
+      "type": "restaurant",
+      "reviews": [],
+      "contactInfo": {
+        "phone": "+1234567821",
+        "email": "info@sushibar.com",
+        "features": "Bar, Takeout, Vegan Options"
+      }
+    },
+    {
+      "id": 155,
+      "title": "The Climbing Gym",
+      "description": "Indoor climbing for all skill levels.",
+      "image": "https://unsplash.com/photos/climbing-gym",
+      "location": {
+        "address": "2800 Boulder Rd, Rock City, RC 28028",
+        "city": "Rock City",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.7,
+      "numberOfReviews": 125,
+      "categories": ["climbing", "fitness", "indoor"],
+      "type": "miscellaneous",
+      "reviews": [],
+      "contactInfo": {
+        "phone": "+1234567822",
+        "email": "info@climbinggym.com",
+        "features": "Gear Rental, Classes, Cafe"
+      }
+    },
+    {
+      "id": 156,
+      "title": "The Vegan Spot",
+      "description": "Plant-based meals and snacks.",
+      "image": "https://unsplash.com/photos/vegan-spot",
+      "location": {
+        "address": "2900 Green Rd, Plant City, PC 29029",
+        "city": "Plant City",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.8,
+      "numberOfReviews": 135,
+      "categories": ["vegan", "healthy", "cafe"],
+      "type": "restaurant",
+      "reviews": [],
+      "contactInfo": {
+        "phone": "+1234567823",
+        "email": "info@veganspot.com",
+        "features": "Gluten Free, Takeout, Outdoor Seating"
+      }
+    },
+    {
+      "id": 157,
+      "title": "The Pancake House",
+      "description": "Breakfast all day, every day.",
+      "image": "https://unsplash.com/photos/pancake-house",
+      "location": {
+        "address": "3000 Maple St, Syrup City, SC 30030",
+        "city": "Syrup City",
+        "country": "Sample Country"
+      },
+      "averageRating": 4.7,
+      "numberOfReviews": 155,
+      "categories": ["breakfast", "pancakes", "family"],
+      "type": "restaurant",
+      "reviews": [],
+      "contactInfo": {
+        "phone": "+1234567824",
+        "email": "info@pancakehouse.com",
+        "features": "Breakfast, Kids Menu, Takeout"
+      }
+    }
+  ],
+  "home": {
+    "nearYou": [
+      {
+        "id": 124,
+        "title": "Hotel Palace",
+        "description": "Authentic Italian pizza in the heart of the city.",
+        "image": "https://unsplash.com/photos/pizza-restaurant",
+        "location": {
+          "address": "456 Pizza Ave, Food City, FC 45678",
+          "city": "Food City",
+          "country": "Sample Country"
+        },
+        "averageRating": 4.7,
+        "numberOfReviews": 200,
+        "categories": ["pizza", "family", "outdoor"],
+        "type": "restaurant"
+      },
+      {
+        "id": 126,
+        "title": "Cafe Corner",
+        "description": "Cozy cafe with the best coffee in town.",
+        "image": "https://unsplash.com/photos/cafe-corner",
+        "location": {
+          "address": "321 Coffee Ln, Brew City, BC 32100",
+          "city": "Brew City",
+          "country": "Sample Country"
+        },
+        "averageRating": 4.6,
+        "numberOfReviews": 180,
+        "categories": ["coffee", "pet-friendly", "outdoor"],
+        "type": "miscellaneous"
+      },
+      {
+        "id": 127,
+        "title": "Sushi World",
+        "description": "Fresh sushi and sashimi prepared by expert chefs.",
+        "image": "https://unsplash.com/photos/sushi-restaurant",
+        "location": {
+          "address": "654 Sushi St, Fish Town, FT 65432",
+          "city": "Fish Town",
+          "country": "Sample Country"
+        },
+        "averageRating": 4.9,
+        "numberOfReviews": 210,
+        "categories": ["sushi", "vegan", "terrace"],
+        "type": "restaurant"
+      }
+    ],
+    "youMightLikeThese": [
+      {
+        "id": 123,
+        "title": "Sample Data",
+        "description": "This is a sample JSON data file for testing purposes.",
+        "image": "https://unsplash.com/photos/two-plates-of-spaghetti-with-sauce-and-cheese-Eb3rm3C3ijc",
+        "location": {
+          "address": "123 Sample St, Sample City, SC 12345",
+          "city": "Sample City",
+          "country": "Sample Country"
+        },
+        "averageRating": 4.5,
+        "numberOfReviews": 150,
+        "categories": ["italian", "outdoor", "terrace"],
+        "type": "restaurant"
+      },
+      {
+        "id": 124,
+        "title": "Pizza Palace",
+        "description": "Authentic Italian pizza in the heart of the city.",
+        "image": "https://unsplash.com/photos/pizza-restaurant",
+        "location": {
+          "address": "456 Pizza Ave, Food City, FC 45678",
+          "city": "Food City",
+          "country": "Sample Country"
+        },
+        "averageRating": 4.7,
+        "numberOfReviews": 200,
+        "categories": ["pizza", "family", "outdoor"],
+        "type": "restaurant"
+      },
+      {
+        "id": 126,
+        "title": "Cafe Corner",
+        "description": "Cozy cafe with the best coffee in town.",
+        "image": "https://unsplash.com/photos/cafe-corner",
+        "location": {
+          "address": "321 Coffee Ln, Brew City, BC 32100",
+          "city": "Brew City",
+          "country": "Sample Country"
+        },
+        "averageRating": 4.6,
+        "numberOfReviews": 180,
+        "categories": ["coffee", "pet-friendly", "outdoor"],
+        "type": "miscellaneous"
+      },
+      {
+        "id": 127,
+        "title": "Sushi World",
+        "description": "Fresh sushi and sashimi prepared by expert chefs.",
+        "image": "https://unsplash.com/photos/sushi-restaurant",
+        "location": {
+          "address": "654 Sushi St, Fish Town, FT 65432",
+          "city": "Fish Town",
+          "country": "Sample Country"
+        },
+        "averageRating": 4.9,
+        "numberOfReviews": 210,
+        "categories": ["sushi", "vegan", "terrace"],
+        "type": "restaurant"
+      }
+    ]
+  }
+}

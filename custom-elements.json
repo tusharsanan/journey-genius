@@ -1,0 +1,943 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "src/journey-genius.app.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "JourneyGeniusApp",
+          "members": [],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "journey-genius-app",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "JourneyGeniusApp",
+          "declaration": {
+            "name": "JourneyGeniusApp",
+            "module": "src/journey-genius.app.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "journey-genius-app",
+          "declaration": {
+            "name": "JourneyGeniusApp",
+            "module": "src/journey-genius.app.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/types/journey-item-types.ts",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/templates/review-dialog-body-template.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "reviewDialogBodyTemplate",
+          "return": {
+            "type": {
+              "text": "TemplateResult"
+            }
+          },
+          "parameters": [
+            {
+              "name": "selectedItem",
+              "type": {
+                "text": "JourneyItem"
+              }
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "reviewDialogBodyTemplate",
+          "declaration": {
+            "name": "reviewDialogBodyTemplate",
+            "module": "src/templates/review-dialog-body-template.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/services/home.service.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "fetchHomePageData",
+          "return": {
+            "type": {
+              "text": "Promise<JourneyItem[]>"
+            }
+          }
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "fetchHomePageData",
+          "declaration": {
+            "name": "fetchHomePageData",
+            "module": "src/services/home.service.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/services/items.service.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "fetchItemsData",
+          "return": {
+            "type": {
+              "text": "Promise<JourneyItem[]>"
+            }
+          },
+          "parameters": [
+            {
+              "name": "itemValue",
+              "type": {
+                "text": "string"
+              }
+            },
+            {
+              "name": "itemType",
+              "type": {
+                "text": "string"
+              }
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "fetchItemsData",
+          "declaration": {
+            "name": "fetchItemsData",
+            "module": "src/services/items.service.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/journey-header/journey-header.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "JourneyHeader",
+          "members": [],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "journey-header",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "JourneyHeader",
+          "declaration": {
+            "name": "JourneyHeader",
+            "module": "src/components/journey-header/journey-header.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "journey-header",
+          "declaration": {
+            "name": "JourneyHeader",
+            "module": "src/components/journey-header/journey-header.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/journey-error/journey-error.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "JourneyError",
+          "members": [],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "journey-error",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "JourneyError",
+          "declaration": {
+            "name": "JourneyError",
+            "module": "src/components/journey-error/journey-error.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "journey-error",
+          "declaration": {
+            "name": "JourneyError",
+            "module": "src/components/journey-error/journey-error.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/journey-home/journey-home.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "JourneyHome",
+          "members": [
+            {
+              "kind": "field",
+              "name": "itemType",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\""
+            },
+            {
+              "kind": "field",
+              "name": "itemValue",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\""
+            },
+            {
+              "kind": "field",
+              "name": "isFormSubmitted",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false"
+            },
+            {
+              "kind": "field",
+              "name": "searchType",
+              "type": {
+                "text": "string[]"
+              },
+              "default": "[\"Restaurant\", \"Hotel\"]"
+            },
+            {
+              "kind": "field",
+              "name": "#fetchItemsTask",
+              "privacy": "private",
+              "default": "new Task(this, {\n    task: ([itemValue, itemType]: [string, string]) =>\n      fetchItemsData(itemValue, itemType),\n    autoRun: false,\n  })"
+            },
+            {
+              "kind": "method",
+              "name": "submitHandler",
+              "parameters": [
+                {
+                  "name": "ev",
+                  "type": {
+                    "text": "any"
+                  }
+                }
+              ]
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "journey-home",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "JourneyHome",
+          "declaration": {
+            "name": "JourneyHome",
+            "module": "src/components/journey-home/journey-home.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "journey-home",
+          "declaration": {
+            "name": "JourneyHome",
+            "module": "src/components/journey-home/journey-home.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/journey-review/journey-review.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "JourneyReview",
+          "members": [
+            {
+              "kind": "field",
+              "name": "itemId",
+              "type": {
+                "text": "number"
+              },
+              "attribute": "itemId"
+            },
+            {
+              "kind": "field",
+              "name": "averageRating",
+              "type": {
+                "text": "number"
+              },
+              "attribute": "averageRating"
+            },
+            {
+              "kind": "field",
+              "name": "rating",
+              "type": {
+                "text": "number"
+              },
+              "privacy": "private",
+              "default": "0"
+            },
+            {
+              "kind": "field",
+              "name": "isReviewSubmitted",
+              "type": {
+                "text": "string"
+              },
+              "privacy": "private",
+              "default": "\"false\""
+            },
+            {
+              "kind": "method",
+              "name": "handleRatingChanged",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "e",
+                  "type": {
+                    "text": "CustomEvent"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "field",
+              "name": "submitHandler"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "itemId",
+              "type": {
+                "text": "number"
+              },
+              "fieldName": "itemId"
+            },
+            {
+              "name": "averageRating",
+              "type": {
+                "text": "number"
+              },
+              "fieldName": "averageRating"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "journey-review",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "JourneyReview",
+          "declaration": {
+            "name": "JourneyReview",
+            "module": "src/components/journey-review/journey-review.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "journey-review",
+          "declaration": {
+            "name": "JourneyReview",
+            "module": "src/components/journey-review/journey-review.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/journey-section-list/journey-section-list.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "JourneySectionList",
+          "members": [
+            {
+              "kind": "field",
+              "name": "items",
+              "type": {
+                "text": "JourneyItem[]"
+              },
+              "default": "[]",
+              "attribute": "items"
+            },
+            {
+              "kind": "field",
+              "name": "closeButton",
+              "type": {
+                "text": "HTMLElement"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "_isOpen",
+              "type": {
+                "text": "boolean"
+              },
+              "privacy": "private",
+              "default": "false"
+            },
+            {
+              "kind": "field",
+              "name": "_selectedItem",
+              "type": {
+                "text": "JourneyItem | null"
+              },
+              "privacy": "private",
+              "default": "null"
+            },
+            {
+              "kind": "method",
+              "name": "openDialog",
+              "parameters": [
+                {
+                  "name": "item",
+                  "type": {
+                    "text": "JourneyItem"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "handleDialog",
+              "parameters": [
+                {
+                  "name": "e",
+                  "type": {
+                    "text": "any"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "closeDialog"
+            },
+            {
+              "kind": "method",
+              "name": "onKeydown",
+              "parameters": [
+                {
+                  "name": "e",
+                  "type": {
+                    "text": "KeyboardEvent"
+                  }
+                },
+                {
+                  "name": "item",
+                  "type": {
+                    "text": "JourneyItem"
+                  }
+                }
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "items",
+              "type": {
+                "text": "JourneyItem[]"
+              },
+              "default": "[]",
+              "fieldName": "items"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "journey-section-list",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "JourneySectionList",
+          "declaration": {
+            "name": "JourneySectionList",
+            "module": "src/components/journey-section-list/journey-section-list.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "journey-section-list",
+          "declaration": {
+            "name": "JourneySectionList",
+            "module": "src/components/journey-section-list/journey-section-list.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/ui/journey-button/journey-button.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "JourneyButton",
+          "members": [],
+          "superclass": {
+            "name": "LionButton",
+            "package": "@lion/ui/button.js"
+          },
+          "tagName": "journey-button",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "JourneyButton",
+          "declaration": {
+            "name": "JourneyButton",
+            "module": "src/components/ui/journey-button/journey-button.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "journey-button",
+          "declaration": {
+            "name": "JourneyButton",
+            "module": "src/components/ui/journey-button/journey-button.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/ui/journey-button-submit/journey-button-submit.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "JourneyButtonSubmit",
+          "members": [],
+          "superclass": {
+            "name": "LionButtonSubmit",
+            "package": "@lion/ui/button.js"
+          },
+          "tagName": "journey-button-submit",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "JourneyButtonSubmit",
+          "declaration": {
+            "name": "JourneyButtonSubmit",
+            "module": "src/components/ui/journey-button-submit/journey-button-submit.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "journey-button-submit",
+          "declaration": {
+            "name": "JourneyButtonSubmit",
+            "module": "src/components/ui/journey-button-submit/journey-button-submit.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/ui/journey-card/journey-card.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "JourneyCard",
+          "members": [],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "journey-card",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "JourneyCard",
+          "declaration": {
+            "name": "JourneyCard",
+            "module": "src/components/ui/journey-card/journey-card.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "journey-card",
+          "declaration": {
+            "name": "JourneyCard",
+            "module": "src/components/ui/journey-card/journey-card.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/ui/journey-dialog/journey-dialog.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "JourneyDialog",
+          "members": [],
+          "superclass": {
+            "name": "LionDialog",
+            "package": "@lion/ui/dialog.js"
+          },
+          "tagName": "journey-dialog",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "JourneyDialog",
+          "declaration": {
+            "name": "JourneyDialog",
+            "module": "src/components/ui/journey-dialog/journey-dialog.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "journey-dialog",
+          "declaration": {
+            "name": "JourneyDialog",
+            "module": "src/components/ui/journey-dialog/journey-dialog.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/ui/journey-form/journey-form.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "JourneyForm",
+          "superclass": {
+            "name": "LionForm",
+            "package": "@lion/ui/form.js"
+          },
+          "tagName": "journey-form",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "JourneyForm",
+          "declaration": {
+            "name": "JourneyForm",
+            "module": "src/components/ui/journey-form/journey-form.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "journey-form",
+          "declaration": {
+            "name": "JourneyForm",
+            "module": "src/components/ui/journey-form/journey-form.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/ui/journey-searchbar/journey-searchbar.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "JourneySearchbar",
+          "members": [
+            {
+              "kind": "field",
+              "name": "placeholderText",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"Search for a title...\"",
+              "attribute": "placeholderText"
+            },
+            {
+              "kind": "field",
+              "name": "type",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"search\""
+            }
+          ],
+          "attributes": [
+            {
+              "name": "placeholderText",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"Search for a title...\"",
+              "fieldName": "placeholderText"
+            }
+          ],
+          "superclass": {
+            "name": "LionInput",
+            "package": "@lion/ui/input.js"
+          },
+          "tagName": "journey-searchbar",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "JourneySearchbar",
+          "declaration": {
+            "name": "JourneySearchbar",
+            "module": "src/components/ui/journey-searchbar/journey-searchbar.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "journey-searchbar",
+          "declaration": {
+            "name": "JourneySearchbar",
+            "module": "src/components/ui/journey-searchbar/journey-searchbar.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/ui/journey-select/journey-select.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "JourneySelect",
+          "members": [],
+          "superclass": {
+            "name": "LionSelect",
+            "package": "@lion/ui/select.js"
+          },
+          "tagName": "journey-select",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "JourneySelect",
+          "declaration": {
+            "name": "JourneySelect",
+            "module": "src/components/ui/journey-select/journey-select.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "journey-select",
+          "declaration": {
+            "name": "JourneySelect",
+            "module": "src/components/ui/journey-select/journey-select.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/ui/journey-star-rating/journey-star-rating.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "StarRating",
+          "members": [
+            {
+              "kind": "field",
+              "name": "value",
+              "type": {
+                "text": "number"
+              },
+              "default": "0",
+              "attribute": "value"
+            },
+            {
+              "kind": "field",
+              "name": "max",
+              "type": {
+                "text": "number"
+              },
+              "default": "5",
+              "attribute": "max"
+            },
+            {
+              "kind": "method",
+              "name": "setRating",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "rating",
+                  "type": {
+                    "text": "number"
+                  }
+                }
+              ]
+            }
+          ],
+          "events": [
+            {
+              "name": "rating-changed",
+              "type": {
+                "text": "CustomEvent"
+              }
+            }
+          ],
+          "attributes": [
+            {
+              "name": "value",
+              "type": {
+                "text": "number"
+              },
+              "default": "0",
+              "fieldName": "value"
+            },
+            {
+              "name": "max",
+              "type": {
+                "text": "number"
+              },
+              "default": "5",
+              "fieldName": "max"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "journey-star-rating",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "StarRating",
+          "declaration": {
+            "name": "StarRating",
+            "module": "src/components/ui/journey-star-rating/journey-star-rating.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "journey-star-rating",
+          "declaration": {
+            "name": "StarRating",
+            "module": "src/components/ui/journey-star-rating/journey-star-rating.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/ui/journey-textarea/journey-textarea.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "JourneyTextarea",
+          "superclass": {
+            "name": "LionTextarea",
+            "package": "@lion/ui/textarea.js"
+          },
+          "tagName": "journey-textarea",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "JourneyTextarea",
+          "declaration": {
+            "name": "JourneyTextarea",
+            "module": "src/components/ui/journey-textarea/journey-textarea.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "journey-textarea",
+          "declaration": {
+            "name": "JourneyTextarea",
+            "module": "src/components/ui/journey-textarea/journey-textarea.ts"
+          }
+        }
+      ]
+    }
+  ]
+}

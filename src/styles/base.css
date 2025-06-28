@@ -1,0 +1,33 @@
+:root {
+  --primary-color: #2196f3;
+  --primary-color-dark: #0053a0;
+  --gray-300: #b0b8c1;
+  --blue-100: #2196f3
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 40px;
+  --space-7: 48px;
+  --space-8: 56px;
+  --space-9: 64px;
+  --font-size-xs: 1rem;
+  --font-size-md: 1.5rem;
+  --font-size-lg: 2rem;
+  --font-size-xl: 2.5rem;
+  --font-size-xxl: 3rem;
+
+  --error-color: #ff0000;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
