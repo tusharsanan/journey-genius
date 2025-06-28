@@ -22,7 +22,11 @@ export default {
       noEmitOnError: true,
     }),
     replace({ preventAssignment: false, "Reflect.decorate": "undefined" }),
-    resolve(),
+    resolve({
+      customResolveOptions: {
+        moduleDirectory: "src",
+      },
+    }),
     /**
      * This minification setup serves the static site generation.
      * For bundling and minification, check the README.md file.
