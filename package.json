@@ -42,7 +42,6 @@
     "@11ty/eleventy": "^1.0.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
     "@custom-elements-manifest/analyzer": "^0.6.3",
-    "@open-wc/building-rollup": "^3.0.2",
     "@open-wc/testing": "^4.0.0",
     "@remcovaes/web-test-runner-vite-plugin": "^1.2.2",
     "@rollup/plugin-node-resolve": "^15.2.3",

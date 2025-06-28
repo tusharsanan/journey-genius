@@ -20,6 +20,7 @@
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
     "noImplicitOverride": false,
     "plugins": [
       {
