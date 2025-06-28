@@ -5,11 +5,9 @@ import resolve from "@rollup/plugin-node-resolve";
 import replace from "@rollup/plugin-replace";
 
 export default {
-  input: "src/journey-genius.app.ts",
+  input: "./index.html",
   output: {
-    dir: "dist",
-    format: "esm",
-    entryFileNames: "journey-genius.app.bundled.js",
+    sourcemap: false,
   },
   onwarn(warning) {
     if (warning.code !== "THIS_IS_UNDEFINED") {
