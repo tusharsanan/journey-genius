@@ -7,7 +7,7 @@
     "declarationMap": true,
     "sourceMap": true,
     "inlineSources": true,
-    "outDir": "dist",
+    "outDir": "./dist",
     "rootDir": "./src",
     "strict": true,
     "noUnusedLocals": true,
@@ -35,5 +35,5 @@
     "src/journey-genius.app.js",
     "src/journey-genius.app.spec.js"
   ],
-  "exclude": ["dist", "node_modules"]
+  "exclude": []
 }
