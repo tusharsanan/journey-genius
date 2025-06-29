@@ -12,7 +12,7 @@ import replace from "@rollup/plugin-replace";
 export default {
   input: "src/journey-genius.app.ts",
   output: {
-    file: "journey-genius.app.bundled.js",
+    file: "dist/journey-genius.app.js",
     format: "esm",
   },
   onwarn(warning) {
