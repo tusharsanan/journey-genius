@@ -29,7 +29,9 @@
     "web-components",
     "lit-element",
     "typescript",
-    "lit"
+    "lit",
+    "journey-genius",
+    "travel"
   ],
   "dependencies": {
     "@lion/input": "^0.18.0",
@@ -39,7 +41,7 @@
     "lit": "^3.2.0"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.1",
+    "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
     "@custom-elements-manifest/analyzer": "^0.6.3",
     "@open-wc/testing": "^4.0.0",
@@ -51,18 +53,18 @@
     "@types/mocha": "^10.0.10",
     "@typescript-eslint/eslint-plugin": "^5.25.0",
     "@typescript-eslint/parser": "^5.25.0",
-    "@web/dev-server": "^0.1.31",
+    "@web/dev-server": "^0.4.6",
     "@web/dev-server-legacy": "^1.0.0",
     "@web/rollup-plugin-copy": "^0.5.1",
     "@web/rollup-plugin-html": "^2.3.0",
-    "@web/test-runner": "^0.15.3",
-    "@web/test-runner-playwright": "^0.9.0",
+    "@web/test-runner": "^0.20.2",
+    "@web/test-runner-playwright": "^0.11.1",
     "@webcomponents/webcomponentsjs": "^2.8.0",
     "chai": "^5.2.0",
     "cypress": "^14.5.0",
     "eslint": "^8.15.0",
-    "lit-analyzer": "^1.2.1",
-    "prettier": "^2.6.2",
+    "lit-analyzer": "^2.0.3",
+    "prettier": "^2.8.8",
     "rimraf": "^3.0.2",
     "rollup": "^4.18.0",
     "rollup-plugin-summary": "^2.0.1",

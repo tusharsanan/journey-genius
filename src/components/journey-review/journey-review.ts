@@ -6,75 +6,84 @@ import "../ui/journey-textarea/journey-textarea";
 import "../ui/journey-button-submit/journey-button-submit";
 import { Required } from "@lion/ui/form-core.js";
 import { loadDefaultFeedbackMessages } from "@lion/ui/validate-messages.js";
+import { notificationStyles } from "../../styles/notification.styles";
+import { patchReviews } from "../../services/reviews.service";
+import { reviewNotificationsTemplate } from "../../templates/review-notifications-template";
 
 @customElement("journey-review")
 export class JourneyReview extends LitElement {
-  static styles = css`
-    .write-review-section {
-      margin-top: var(--space-2);
-      display: flex;
-      align-items: flex-start;
-      flex-direction: column;
-      gap: var(--space-3);
+  static styles = [
+    notificationStyles,
+    css`
+      .write-review-section {
+        margin-top: var(--space-2);
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: var(--space-3);
 
-      @media (min-width: 1025px) {
-        flex-direction: row;
-        align-items: center;
+        @media (min-width: 1025px) {
+          flex-direction: row;
+          align-items: center;
+        }
       }
-    }
 
-    h3 {
-      margin-bottom: var(--space-2);
-    }
-
-    journey-textarea {
-      width: 100%;
-
-      @media (min-width: 1025px) {
-        width: 50%;
+      h3 {
+        margin-bottom: var(--space-2);
       }
-    }
 
-    .write-review-textarea[shows-feedback-for~="error"] {
-      background-color: #ffd4d4;
-    }
-  `;
+      .write-review-textarea {
+        width: 100%;
+        @media (min-width: 1025px) {
+          width: 50%;
+        }
+      }
+
+      .write-review-textarea[shows-feedback-for~="error"] {
+        background-color: #ffd4d4;
+      }
+    `,
+  ];
 
   @property({ type: Number }) itemId!: number;
   @property({ type: Number }) averageRating!: number;
   @state() private rating = 0;
-  @state() private isReviewSubmitted = "false";
+  @state() private isReviewSubmitted = false;
+  @state() private isReviewSubmissionFailed = false;
 
   constructor() {
     super();
     loadDefaultFeedbackMessages();
   }
 
-  private handleRatingChanged(e: CustomEvent) {
+  private handleRatingChanged(e: CustomEvent): void {
     this.rating = e.detail.value;
   }
 
-  submitHandler = (ev: any) => {
+  submitHandler = async (ev: any) => {
     if (!ev.target.hasFeedbackFor?.includes("error")) {
       ev.currentTarget.resetGroup();
 
       this.rating = 0;
 
-      fetch(`http://localhost:3000/journeyData/${this.itemId}`, {
-        method: "PATCH",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ numberOfReviews: this.averageRating + 1 }),
-      }).then(() => {
-        this.isReviewSubmitted = "true";
-      });
+      try {
+        await patchReviews(this.itemId, this.averageRating);
+        this.isReviewSubmitted = true;
+      } catch (error) {
+        console.error("Error while submitting the review:", error);
+        this.isReviewSubmitted = false;
+        this.isReviewSubmissionFailed = true;
+      }
     }
   };
 
   public render(): TemplateResult {
-    if (this.isReviewSubmitted === "true") {
-      return html`<p data-test="thank-you-message">
-        Thank you for your review! Refresh the page to see your review here
-      </p>`;
+    if (this.isReviewSubmitted === true) {
+      return reviewNotificationsTemplate(true);
+    }
+
+    if (this.isReviewSubmissionFailed) {
+      return reviewNotificationsTemplate(false);
     }
 
     return html` <journey-form @submit="${this.submitHandler}">

@@ -15,7 +15,7 @@ export class StarRating extends LitElement {
       transition: color 0.2s;
     }
     .star.inactive {
-      color: #e0e0e0;
+      color: var(--gray-100);
     }
     .star:focus {
       outline: 2px solid #0077cc;
@@ -23,7 +23,12 @@ export class StarRating extends LitElement {
   `;
 
   private setRating(rating: number) {
-    this.value = rating;
+    if (this.value === rating) {
+      this.value = 0;
+    } else {
+      this.value = rating;
+    }
+
     this.dispatchEvent(
       new CustomEvent("rating-changed", {
         detail: { value: rating },

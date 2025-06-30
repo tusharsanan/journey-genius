@@ -1,7 +1,6 @@
 import { css, html, LitElement, TemplateResult } from "lit";
 import { customElement } from "lit/decorators.js";
 
-import "./components/journey-error/journey-error";
 import "./components/journey-home/journey-home";
 
 @customElement("journey-genius-app")

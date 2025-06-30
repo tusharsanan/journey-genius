@@ -8,7 +8,8 @@ export class JourneyButton extends LionButton {
     return [
       ...super.styles,
       css`
-        :host {
+        :host,
+        :host(:active) {
           background: none;
         }
       `,

@@ -7,7 +7,7 @@ export function reviewDialogBodyTemplate(
   return html`
     <article class="item-container">
       <img
-        class="card-image"
+        class="popup-image"
         src="${selectedItem.image}"
         alt="${selectedItem.title}"
       />

@@ -1,5 +1,5 @@
 import { css, html, LitElement, nothing } from "lit";
-import { customElement, property, query, state } from "lit/decorators.js";
+import { customElement, property, state } from "lit/decorators.js";
 import { JourneyItem } from "../../types/journey-item-types";
 import { repeat } from "lit/directives/repeat.js";
 import "../ui/journey-card/journey-card";
@@ -7,20 +7,19 @@ import "../ui/journey-dialog/journey-dialog";
 import "../journey-review/journey-review";
 import "../ui/journey-button/journey-button";
 import { reviewDialogBodyTemplate } from "../../templates/review-dialog-body-template";
+import { topReviewsTemplate } from "../../templates/top-reviews.template";
 
 @customElement("journey-section-list")
 export class JourneySectionList extends LitElement {
   @property({ type: Array }) items: JourneyItem[] = [];
-  @query(".close-button") closeButton!: HTMLElement;
 
   static styles = css`
     journey-card {
-      display: flex;
+      display: grid;
       height: 100%;
       cursor: pointer;
 
-      @media (min-width: 600px) {
-        display: flex;
+      @media (min-width: 1025px) {
         box-sizing: border-box;
       }
     }
@@ -31,6 +30,19 @@ export class JourneySectionList extends LitElement {
       font-size: 1.5rem;
       justify-content: flex-end;
       display: flex;
+      position: relative;
+      bottom: 8px;
+      left: 4px;
+    }
+
+    .popup-image {
+      max-height: 250px;
+      max-width: 100%;
+      object-fit: cover;
+      @media (min-width: 1025px) {
+        max-width: 40%;
+        max-height: 400px;
+      }
     }
 
     .dialog {
@@ -50,16 +62,16 @@ export class JourneySectionList extends LitElement {
 
     .card-image {
       max-width: 100%;
-      max-height: 300px;
-      width: auto;
-      height: auto;
-      display: block;
-      border-radius: 8px;
+      border-radius: 8px 8px 0 0;
       object-fit: cover;
+      max-height: 188px;
+      width: 100%;
     }
 
     .header {
-      padding: var(--space-3);
+      padding: 0px var(--space-3) 0px;
+      font-size: 1.25rem;
+      margin-top: var(--space-3);
     }
 
     .description {
@@ -67,7 +79,6 @@ export class JourneySectionList extends LitElement {
     }
 
     h2 {
-      margin-top: var(--space-4);
       font-size: 1.75rem;
       margin-bottom: var(--space-3);
 
@@ -78,7 +89,6 @@ export class JourneySectionList extends LitElement {
 
     .item-container {
       display: flex;
-      flex-wrap: wrap;
       flex-direction: column;
 
       @media (min-width: 1025px) {
@@ -105,20 +115,20 @@ export class JourneySectionList extends LitElement {
   @state() private _isOpen = false;
   @state() private _selectedItem: JourneyItem | null = null;
 
-  openDialog(item: JourneyItem) {
+  public openDialog(item: JourneyItem): void {
     this._selectedItem = item;
     this._isOpen = true;
   }
 
-  handleDialog(e: any) {
+  public handleDialog(e: any): void {
     this._isOpen = e.detail.opened;
   }
 
-  closeDialog() {
+  public closeDialog(): void {
     this._isOpen = false;
   }
 
-  onKeydown(e: KeyboardEvent, item: JourneyItem) {
+  public onKeydown(e: KeyboardEvent, item: JourneyItem): void {
     if (e.key === "Enter" || e.key === " ") {
       this.openDialog(item!);
     }
@@ -149,7 +159,7 @@ export class JourneySectionList extends LitElement {
               <p>
                 Rating: ${item.averageRating} (${item.numberOfReviews} reviews)
               </p>
-              <p>Features: ${item.contactInfo.features}</p>
+              <p>Features: ${item.contactInfo?.features}</p>
             </div>
           </journey-card>`
         )}
@@ -172,22 +182,9 @@ export class JourneySectionList extends LitElement {
                 <journey-review
                   .itemId="${this._selectedItem.id}"
                   .averageRating="${this._selectedItem.numberOfReviews}"
-                  @review-submitted="${this.closeDialog}"
                 ></journey-review>
 
-                <section class="top-reviews">
-                  <h3>Top reviews</h3>
-
-                  ${this._selectedItem.reviews.length > 0
-                    ? html`<ul>
-                        ${repeat(
-                          this._selectedItem.reviews,
-                          (review) => review.id,
-                          (review) => html`<li>${review.comment}</li>`
-                        )}
-                      </ul>`
-                    : html`<p>No reviews yet.</p>`}
-                </section>
+                ${topReviewsTemplate(this._selectedItem)}
               `
             : html`<div slot="content">${nothing}</div>`}
         </div>

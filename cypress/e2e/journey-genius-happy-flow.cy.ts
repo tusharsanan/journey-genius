@@ -78,7 +78,7 @@ describe("journey genius happy flow spec", () => {
       .find("p[data-test='thank-you-message']", { includeShadowDom: true })
       .should(
         "contain.text",
-        "Thank you for your review! Refresh the page to see your review here"
+        "Thank you for your review! Your review has been saved."
       );
   });
 
